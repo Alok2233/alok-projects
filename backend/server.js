@@ -8,7 +8,7 @@ dotenv.config();
 const connectDB = require('./config/db');
 const errorHandler = require('./middleware/errorMiddleware');
 
-const authRoutes = require('./routes/authRoutes');
+
 const projectRoutes = require('./routes/projectRoutes');
 const clientRoutes = require('./routes/clientRoutes');
 const contactRoutes = require('./routes/contactRoutes');
@@ -22,7 +22,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
-app.use('/api/auth', authRoutes);
+
 app.use('/api/projects', projectRoutes);
 app.use('/api/clients', clientRoutes);
 app.use('/api/contacts', contactRoutes);

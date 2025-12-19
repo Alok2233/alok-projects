@@ -8,7 +8,7 @@ const {
 } = require('../controllers/projectController');
 
 router.get('/', getProjects);
-router.post('/', auth, upload.single('image'), createProject);
-router.delete('/:id', auth, deleteProject);
+router.post('/',  upload.single('image'), createProject);
+router.delete('/:id',  deleteProject);
 
 module.exports = router;

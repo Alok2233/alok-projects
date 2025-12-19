@@ -8,7 +8,7 @@ const {
 } = require('../controllers/clientController');
 
 router.get('/', getClients);
-router.post('/', auth, upload.single('image'), createClient);
+router.post('/', upload.single('image'), createClient);
 router.delete('/:id', auth, deleteClient);
 
 module.exports = router;

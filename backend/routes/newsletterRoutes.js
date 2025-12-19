@@ -5,7 +5,7 @@ const {
   subscribe
 } = require('../controllers/newsletterController');
 
-router.get('/', auth, getSubscribers);
+router.get('/',  getSubscribers);
 router.post('/', subscribe);
 
 module.exports = router;
