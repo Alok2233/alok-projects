@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || 'https://alok-projects-1.onrender.com/api';
+const API_URL = import.meta.env.VITE_API_URL || 'https://alok-projects.onrender.com/api';
 
 
 // Get auth token from localStorage
